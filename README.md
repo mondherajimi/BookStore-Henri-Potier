@@ -1,6 +1,6 @@
 # BookStore-Henri-Potier
-simulation dachat de livres avec promotion
 
+Simulation d'achat de livres avec promotion
 Ce projet a été initié avec [Create React App](https://github.com/facebook/create-react-app), en utilisant Node.js v10.16.0.
 
 # Installation
