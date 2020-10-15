@@ -399,7 +399,8 @@ body {
 	background-color: #fff;
 	color: #FFFFFF;
 	font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen-Sans, Ubuntu, Cantarell, Helvetica Neue, sans-serif;
-	line-height: 1.5
+	line-height: 1.5;
+	overflow: overlay
 }
 
 @media (min-width:576px) {
@@ -764,6 +765,8 @@ samp {
 	display: -webkit-box;
 	display: -ms-flexbox;
 	display: flex;
+	justify-content: center;
+    min-width: 100%;
 	-ms-flex-wrap: wrap;
 	flex-wrap: wrap
 }
@@ -2015,8 +2018,10 @@ textarea {
 }
 
 [type=submit] {
-	background-color: #333;
+	background-color: #F3A847;
 	color: #fff;
+	height: 34px;
+    width: 34px;
 	cursor: pointer
 }
 
@@ -2140,7 +2145,6 @@ button {
 	border: none;
 	border-radius: 0;
 	background-color: white;
-	border-radius: 7px;
 	font-family: inherit;
 	font-size: inherit;
 	line-height: 1
