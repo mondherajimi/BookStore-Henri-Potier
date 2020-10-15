@@ -42,7 +42,7 @@ class App extends Component {
     this.setState({ bookDetails })
 	}
 	
-  handlePopup() {
+  closePopup() {
         this.setState({bookDetails:{}});
     }
 
@@ -83,7 +83,14 @@ class App extends Component {
       filteredBooks: books,
     })
   }
-
+  
+  resetFilter = () => {
+    this.filter.current.value = '';
+	 this.setState({
+      filteredBooks: this.books,
+    })
+  }
+  
   render() {
     return (
       <div className="App  flex-container">
@@ -91,9 +98,9 @@ class App extends Component {
           <Route exact={true} path="/" render={() =>
 		  <div className="flex-container">
             <Library books={this.state.filteredBooks} handleAddToCart={this.handleAddToCart} showDetails={this.showDetails} cartItemAmount={this.state.cartItemAmount}>
-              <BooksFilter filterRef={this.filter} handleFilter={this.handleFilter} />
+              <BooksFilter filterRef={this.filter} handleFilter={this.handleFilter} resetFilter={this.resetFilter}/>
             </Library>
-			{Object.entries(this.state.bookDetails).length > 0 && <BookDetails changeApp={() => this.handlePopup()} bookDetails={this.state.bookDetails} />}
+			{Object.entries(this.state.bookDetails).length > 0 && <BookDetails handlePopup={() => this.closePopup()} bookDetails={this.state.bookDetails} />}
 			</div>
           } />
           <Route exact={true} path="/cart" render={() =>
