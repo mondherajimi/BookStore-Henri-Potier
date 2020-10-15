@@ -58,9 +58,11 @@ class Cart extends Component {
 
   render() {
     return (
-      <main className="Cart  item-fluid  pas">
+      <main className="Cart w66  small-w100  tiny-w100  pas">
+	  <div className="Library__nav">
         <h1>Mon panier</h1>
         <Nav cartItemAmount={this.props.cartItemAmount} />
+		</div>
         {Object.entries(this.props.cart).length > 0 ? (
           <div>
             <ul className="Cart__list  is-unstyled">
