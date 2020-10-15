@@ -28,8 +28,8 @@ class Cart extends Component {
       totalPrice += (item.amount * item.price)
     })
     this.setState({ totalPrice })
-
-    /* calculate the best offer */
+	/* calculate the best offer */
+    if(Object.keys(cart).length>0){
     fetch(`http://henri-potier.xebia.fr/books/${Object.keys(cart).join()}/commercialOffers`)
       .then((response) => {
         return response.json()
@@ -38,8 +38,8 @@ class Cart extends Component {
         const bestOffer = this.calculatebestOffer(totalPrice, myJson.offers)
         this.setState({ bestOffer })
       })
-  }
-
+        }
+    }
   calculatebestOffer(price, offers) {
     const proposedOffers = []
     offers.forEach((offer) => {
