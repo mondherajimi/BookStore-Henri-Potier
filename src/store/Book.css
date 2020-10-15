@@ -1,1 +1,28 @@
+.Book__cover {
+  min-width: 100px;
+  cursor: pointer;
+  border-radius: 7px;
+}
 
+.Book__price {
+  margin-left: 30px;
+}
+
+/* media object active */
+@media (min-width: 480px) {
+  .Book__content {
+    padding-left: 1rem;
+    align-self: stretch;
+    align-items: flex-start;
+    justify-content: space-between;
+    min-width: 120px;
+  }
+}
+
+/* tiny screens - no more media object */
+@media (max-width: 479px) {
+  .Book {
+    text-align: center;
+    margin-bottom: 4rem;
+  }
+}

@@ -1,0 +1,11 @@
+.BookDetails {
+  background-color: #f8f8f8;
+}
+
+.BookDetails__close {
+  border-radius: 25px;
+}
+
+.BookDetails__link {
+  color: #025aa5;
+}
