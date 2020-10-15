@@ -1,0 +1,8 @@
+.Library__nav {
+  display: flex;
+  height: 70px;
+}
+
+.Library__nav h1 {
+  width: 78%;
+}
