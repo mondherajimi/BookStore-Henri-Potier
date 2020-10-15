@@ -1,0 +1,7 @@
+.NavLink:focus,
+.NavLink:hover,
+.NavLink:active,
+.NavLink--is-active {
+  color: #025aa5;
+  text-decoration: none;
+}
