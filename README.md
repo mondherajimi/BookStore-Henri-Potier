@@ -12,3 +12,7 @@ Pour lancer l'application en mode développement exécutez `npm start`. l'URL [h
 Pour lancer les tests unitaires avec Enzyme exécutez `npm run test`.
 
 Pour lancer l'application en mode production exécutez `npm run build`  ensuite déployer le contenu du répertoire `build` sur un serveur web.
+
+Pour cela vous pouvez utiliser votre propre serveur ou utiliser un serveur statique en exécutant `npm install -g serve` ensuite `serve -s build`
+
+et ouvrir l'URL [http://localhost:5000]
