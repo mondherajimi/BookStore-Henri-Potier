@@ -1,7 +1,6 @@
 .Book__cover {
   min-width: 100px;
   cursor: pointer;
-  border-radius: 7px;
 }
 
 .Book__price {
